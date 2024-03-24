@@ -1,0 +1,16 @@
+{% extends 'BlogApp/padre.html' %}
+
+{% block title %}Edicion de usuario {{ block.super }}{% endblock %}
+
+{% block header %} Edite su usuario {% endblock %}
+
+{% block content %}
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Guardar</button>
+    </form>
+
+    <!-- Agrega un enlace para cambiar el avatar -->
+    <a href="{% url 'agregarAvatar' %}" class="btn btn-secondary mt-3">Cambiar Avatar</a>
+{% endblock %}

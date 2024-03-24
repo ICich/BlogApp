@@ -1,0 +1,26 @@
+/* styles.css */
+body {
+    padding-top: 110px; /* Para evitar que la barra de navegación cubra el contenido */
+}
+
+.navbar-nav {
+    margin-left: auto; /* Mueve los botones hacia la derecha */
+}
+
+.post-preview {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.post-preview h2 {
+    margin-bottom: 10px;
+}
+
+.post-preview p {
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    text-align: left; /* Alinear el texto a la izquierda */
+    margin-top: -10px; /* Ajustar la posición verticalmente */
+}
