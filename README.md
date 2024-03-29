@@ -2,6 +2,8 @@
 
 El proyecto en desarrollo, consta de un Blog con tematica de ciclismo, realizado con el framework Django.
 
+Este sera presentado como entrega final del curso de Python de CoderHouse.
+
 ## Autor
 Desarrollado por Ignacio Cichero.
 
