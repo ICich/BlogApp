@@ -2,6 +2,9 @@
 
 El proyecto en desarrollo, consta de un Blog con tematica de ciclismo, realizado con el framework Django.
 
+##Autor
+Desarrollado por Ignacio Cichero.
+
 ## Requerimientos
 * Python: Este puede ser descargado desde [python.org](https://www.python.org/downloads/)
 * Django: Este puede ser instalado con el comando `pip install django`
@@ -16,7 +19,15 @@ El proyecto en desarrollo, consta de un Blog con tematica de ciclismo, realizado
 ## URLS
 Los urls funcionales son:
 
-**/AppMantenimiento/nuevo_mecanico/: URL para agregar un nuevo mecánico.  
-**/AppMantenimiento/nuevo_vehiculo/: URL para agregar un nuevo vehículo.  
-**/AppMantenimiento/nuevo_mantenimiento/: URL para agregar un nuevo mantenimiento.  
-**/AppMantenimiento/buscar_mecanico/: URL para buscar un mecánico.  
+Página de inicio: http://localhost:8000/BlogApp/
+Acerca de: http://localhost:8000/BlogApp/about/
+Iniciar sesión: http://localhost:8000/BlogApp/login/
+Registro de usuario: http://localhost:8000/BlogApp/register/
+Cerrar sesión: http://localhost:8000/BlogApp/logout/
+Editar perfil de usuario: http://localhost:8000/BlogApp/usredit/
+Agregar avatar: http://localhost:8000/BlogApp/addavatar/
+Crear un nuevo post: http://localhost:8000/BlogApp/create/
+Detalle de un post específico: http://localhost:8000/BlogApp/post/<id_del_post>/
+Lista de todos los posts: http://localhost:8000/BlogApp/posts/
+Actualizar un post existente: http://localhost:8000/BlogApp/post/<id_del_post>/update/
+Eliminar un post existente: http://localhost:8000/BlogApp/post/<id_del_post>/delete/
