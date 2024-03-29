@@ -2,7 +2,7 @@
 
 El proyecto en desarrollo, consta de un Blog con tematica de ciclismo, realizado con el framework Django.
 
-##Autor
+## Autor
 Desarrollado por Ignacio Cichero.
 
 ## Requerimientos
