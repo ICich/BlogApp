@@ -4,11 +4,16 @@
 {% block header %}Publicacion{% endblock %}
 
 {% block content %}
-    {% if mensaje %}
-        <div class="alert alert-success" role="alert">
-            {{ mensaje }}
-        </div>
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-success" role="alert">
+                {{ message }}
+            </div>
+        {% endfor %}
     {% endif %}
+
+
+
 
     <!-- Detalle -->
     <section class="container mt-5">

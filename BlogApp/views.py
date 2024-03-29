@@ -6,6 +6,8 @@ from django.contrib.auth import login, authenticate, logout
 from BlogApp.forms import *
 from django.contrib.auth.decorators import login_required #usar @login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib import messages
+
 
 # Create your views here.
 
@@ -102,31 +104,7 @@ def agregar_avatar(request):
             return redirect("index")
     else:
         form = AvatarFormulario()
-    return render(request, "BlogApp/add_avatar.html", {"form": form})
-        
-'''      
-def agregar_avatar(request):
-    
-    if request.method == "POST":
-        
-        form = AvatarFormulario(request.POST, request.FILES)
-        
-        if form.is_valid():
-            
-            actualUser = User.objects.get(username=request.user)
-            
-            avatar = Avatar(user=actualUser, image=form.cleaned_data["image"])
-            
-            avatar.save()
-            
-            return render(request, "BlogApp/index.html")
-        
-    else:
-        
-        form = AvatarFormulario()
-        
-    return render(request, "BlogApp/add_avatar.html", {"form":form})
- '''           
+    return render(request, "BlogApp/add_avatar.html", {"form": form})          
         
             
 def cerrar_sesion(request):
@@ -171,6 +149,7 @@ def post_update(request, pk):
             form = PostForm(request.POST, request.FILES, instance=post)
             if form.is_valid():
                 form.save()
+                messages.success(request, 'El post se ha actualizado correctamente.')
                 return redirect('post_detail', pk=pk)
         else:
             form = PostForm(instance=post)

@@ -33,11 +33,11 @@ class UserRegistrationForm(UserCreationForm):
         required=True,
         help_text='Requerido. Máximo 30 caracteres.')
     
-    avatar = forms.ImageField(label='Avatar', required=False)
+    #avatar = forms.ImageField(label='Avatar', required=False)
     
     class Meta:
         model = User
-        fields = ['first_name', 'last_name', 'username', 'email', 'password1', 'password2', 'avatar']
+        fields = ['first_name', 'last_name', 'username', 'email', 'password1', 'password2']
         
 class UserEditForm(forms.Form):
     email = forms.EmailField(label="Ingresar email")
