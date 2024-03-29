@@ -31,3 +31,6 @@ Los urls funcionales son:
 * Lista de todos los posts: http://localhost:8000/BlogApp/posts/
 * Actualizar un post existente: http://localhost:8000/BlogApp/post/<id_del_post>/update/
 * Eliminar un post existente: http://localhost:8000/BlogApp/post/<id_del_post>/delete/
+
+## Video demostracion
+[Link video](https://drive.google.com/file/d/1S9Mh91CncXAJMZ6-AeLn3lbwpvWKVPHu/view?usp=drive_link)
